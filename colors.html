@@ -2,12 +2,16 @@
 <head>
 	<title>Colors Game</title>
 	<link rel="stylesheet" type="text/css" href="colors.css">
+	<link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700&subset=latin,greek,greek-ext' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1><span id="rgbDisplay">RBG</span> Color Game</h1>
+	<h1>Can you guess <br/><span id="rgbDisplay">RBG</span> <br/>this color?</h1>
 
-	<div>
+	<div id="stripe">
+		<button id="reset">New Colors</button>
 		<span id="message"></span>
+		<button id="easyMode">Easy</button>
+		<button id="hardMode" class="selected">Hard</button>
 	</div>
 
 	<div id="container">
