@@ -12,9 +12,6 @@ var resetBtn = document.querySelector("#reset");
 var easyBtn = document.querySelector("#easyMode");
 var hardBtn = document.querySelector("#hardMode");
 var isHard = true;
-
-
-
 	//Adding colors to divs and click listeners
 	for (i = 0; i < squares.length; i++ ) {
 		//Add colors to divs
@@ -51,11 +48,7 @@ hardBtn.addEventListener("click", function(){
 
 
 resetBtn.addEventListener("click", function(){
-	if (isHard) {
-		reset(6);
-	}else{
-		reset(3);
-	}
+	reset(isHard?6:3);
 });
 
 function reset(num){
